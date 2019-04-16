@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,36 +9,33 @@
         WEATHER
     </title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/forecast.css">
+    <script src="js/forecast.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span class="title"> REALTIME WEATHER </span>
+        <span class="title"> WEATHER FORECAST </span>
     </header>
     <main>
         <form class="search-form">
             <input class="search-town" type="text" list="cityname">
-            <datalist id="cityname"></datalist>
             <button class="search-form-button" type="submit">search</button>
+            <input class="number-of-days" type="number" min="2" max="5" placeholder=""> days               
         </form>
         <nav class="navigation-div">
-            <a href="history.html">Several days back</a>
-            <a href="forecast.html">Several days forth</a>
+            <a href="index.html">Current weather</a>
+            <a href="">Several days forth</a>
         </nav>
-        <div class="where-and-when">
-            <div class="found-town-date-time" id="town"></div>
-            <div class="found-town-date-time" id="time"></div>
-
+        <div class="where">
+            <div class="found-town" id="town"></div>            
         </div>
         <div class="result">
+            <!-- <div class="response-result" id="date"></div>
             <div class="reponse-result" id="temperature"></div>
             <div class="reponse-result" id="weatherDescription"></div>
-            <div class="reponse-result" id="weatherImage">
-
-            </div>
+            <div class="reponse-result" id="weatherImage"></div> -->
         </div>
     </main>
-
+    
 </body>

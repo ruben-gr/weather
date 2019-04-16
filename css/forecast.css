@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(47, 150, 163), rgb(48,62,143))
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+   
+}
+
+.title{
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 40px;
+    color: whitesmoke; 
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-div {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.search-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.search-town{
+    height: 50px;
+    width: 500px;
+    border: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-right: 18px;
+    padding-left: 18px;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 20px;
+}
+
+.search-form-button{
+    height: 50px;
+    width: 100px;
+    border: 0;
+    margin: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.number-of-days {
+    border: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 20px
+}
+
+.where{
+    height: 15vh;
+}
+
+.found-town {
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 30px;
+    color: white;
+    width: 680px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.result{
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: top;    
+}
+
+.reponse-result{
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    color: whitesmoke;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 30px;    
+}
+
+.foundDayInfo {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: whitesmoke;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 30px;
+    border: 2px solid white;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: top;  
+    width: 230px;
+    height: 350px;
+}
+
+.dayInfoInnerDiv {
+    text-align: center;
+    padding: 10px;
+}
+
+#town {
+    font-size: 30px; 
+}
+
+#temperature {
+    font-size: 40px;
+}
+
+#weatherDescription {
+     font-size: 20px;
+}
+/* #weatherImage */
+#time {                          
+    text-align: right;
+}
+.navigation-div {
+    height: 5vh;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: left; 
+}
+
+.navigation-div a{
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
