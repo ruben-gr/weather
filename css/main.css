@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(47, 150, 163), rgb(48,62,143))
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+   
+}
+
+.title{
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 40px;
+    color: whitesmoke; 
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-div {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.search-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form::after {
+    height: 100px;
+    width: 100px;
+    background: red;
+    z-index: 10;
+}
+
+.search-town{
+    height: 50px;
+    width: 500px;
+    border: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-right: 18px;
+    padding-left: 18px;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 20px;
+}
+
+.search-form-button{
+    height: 50px;
+    width: 100px;
+    border: 0;
+    margin: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.possible-town-list {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items:center;   
+    font: 20px bold Arial, Helvetica, sanc-serif;
+    position: absolute;
+    top: 18vh;  
+    left: 24vw;
+}
+
+.possible-town {
+    
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    border:0;
+    height: 50px;
+    width: 600px;
+    background: white;
+    border-radius: 25px;
+    
+    
+}
+
+
+.where-and-when {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    
+   
+}
+.found-town-date-time {
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 30px;
+    color: white;
+    width: 300px;
+}
+
+.result{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: top;
+    
+}
+
+.reponse-result{
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    color: whitesmoke;
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 30px;
+    
+}
+
+#town, #temperature {
+    text-align: left;
+}
+#time, #weatherImage {
+    text-align: right;
+}
+
+#weatherDescription {
+    text-align: center;
+}
+.navigation-div {
+    height: 10vh;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: left; 
+}
+
+.navigation-div a{
+    font: bold Arial, Helvetica, sanc-serif;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
