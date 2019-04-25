@@ -14,16 +14,18 @@ const weatherIconDiv = document.getElementById("weatherImage");
 const searchInput = document.querySelector(".search-town");
 const searchForm = document.querySelector(".search-form");
 const searchButton = document.querySelector(".search-form-button");
+const APP_URL = "http://api.apixu.com/v1/";
+const API_KEY = "227551ccf5ee4d4c874103644190304";
 
 searchInput.addEventListener("input", (e)=>{
-    requestLink = `http://api.apixu.com/v1/search.json?key=227551ccf5ee4d4c874103644190304&q=${e.target.value}`
+    requestLink = `${APP_URL}search.json?key=${API_KEY}&q=${e.target.value}`
     getPossibleTownsNames(e.target.value);
 })
 
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     searchedCity = searchInput.value
-    requestLink = `http://api.apixu.com/v1/current.json?key=227551ccf5ee4d4c874103644190304&q=${searchedCity}`
+    requestLink = `${APP_URL}current.json?key=${API_KEY}&q=${searchedCity}`
     getWeatherInfo();
 })
 
@@ -72,13 +74,13 @@ function renderPossibleTownsList(receivedData) {
     removePreviousList()
     let listOfPossibleTowns = document.createElement("div")
     listOfPossibleTowns.setAttribute("class", "possible-town-list")
-    document.body.appendChild(listOfPossibleTowns)
+    searchForm.appendChild(listOfPossibleTowns)
     for (let i = 0; i < 5; i++) {
         let possibleTownDiv = document.createElement("div")
         listOfPossibleTowns.appendChild(possibleTownDiv)
         possibleTownDiv.innerHTML = receivedData[i].name
         possibleTownDiv.addEventListener("click", e => {
-            requestLink = `http://api.apixu.com/v1/current.json?key=227551ccf5ee4d4c874103644190304&q=${e.target.innerHTML}`
+            requestLink = `${APP_URL}current.json?key=${API_KEY}&q=${e.target.innerHTML}`
             getWeatherInfo()
             removePreviousList()
         })
@@ -89,6 +91,6 @@ function renderPossibleTownsList(receivedData) {
 function removePreviousList () {
     previouslist = document.querySelector(".possible-town-list") 
     if (previouslist !== undefined && previouslist !== null) {
-        document.body.removeChild(previouslist)
+        searchForm.removeChild(previouslist)
     };
 }
